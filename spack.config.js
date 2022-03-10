@@ -3,10 +3,10 @@ const { join } = require("node:path");
 
 module.exports = config({
 	entry: {
-		node: join(__dirname, 'src/index.ts')
+		index: join(__dirname, 'src/index.ts')
 	},
 	output: {
-		path: join(__dirname, 'pack')
+		path: join(__dirname, 'dist')
 	},
 	module: {}
 });
