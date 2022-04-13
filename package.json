@@ -1,15 +1,15 @@
 {
-	"name": "test",
-	"version": "0.0.1",
-	"description": "",
-	"author": "J",
-	"main": "dist/index.js",
-	"scripts": {
-		"build": "spack"
-	},
-	"devDependencies": {
-		"@swc/cli": "^0.1.55",
-		"@swc/core": "^1.2.152",
-		"parcel": "^2.3.2"
-	}
+  "name": "test",
+  "version": "0.0.1",
+  "description": "",
+  "author": "J",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "spack && swc dist/index.js --config-file .swcrc-2 -o dist/index.js -s inline --source-map-target dist/index.js.map"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.152",
+    "parcel": "^2.3.2"
+  }
 }
